@@ -1,0 +1,168 @@
+/* Main settings  */
+body {
+	background: #f3f3f3;
+	font-family: verdana;
+	margin: 0;
+}
+
+/* Basic things */
+.super-wrapper {
+	box-sizing: border-box;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	right: 0;
+	top: 100px;
+}
+
+.content-wrapper {
+	padding-top: 100px;
+	max-width: 968px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+.top-bar {
+	background: #00BFFF;
+	display: block;
+	padding: 0 15px 0 25px;
+	position: fixed;
+	height: 80px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999999;
+}
+
+/* Top-Bar Elts */
+.logo-ref {
+	display: inline-block;
+	width: 10%;
+	height: 100%;
+}
+
+.navbar {
+	display: inline-block;
+	float: right;
+	width: 79.5%;
+	height: 100%;
+}
+
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	color: black;
+
+}
+
+.spacer {
+	display: inline-block;
+	height: 60%;
+	width: 100%;
+}
+.nav-links {
+	display: inline-block;
+	float: right;
+	width: 100%;
+	height: 15%;
+}
+
+.nav-links .nav-item {
+	padding: 10px;
+}
+
+.nav-links .nav-item:hover {
+	color: black;
+	border-bottom: 2px solid #000000;
+}
+
+.logo {
+	height: 60px;
+    position: relative;
+    left: -8px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: left;
+    opacity: 0.85;
+}
+
+/* Table Settings */
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;    
+}
+
+/* Page CSS */
+.changecolor {
+	color: #000000;
+}
+
+.changecolor.on {
+	color: red;
+}
+
+ul,ol {
+	border: 1px solid black;
+}
+
+ul li {
+	list-style-type: disc;
+	padding: 5px;
+}
+
+ol li {
+	padding: 5px;
+}
+
+#container-slide a {
+	color: #000000;
+}
+
+#slides {
+	display:none;
+}
+
+div.relative {
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #00BFFF;
+} 
+
+div.absolute {
+	border: 3px dotted #00BFFF;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    right: 100px;
+    width: 200px;
+    height: 100px;
+}
+
+div.absolute span {
+	padding: 20px;
+}
+
+#container-one.color {
+	display: inline-block;
+	width: 49.5%;
+	height: 100%;
+}
+
+#container-two.position {
+	display: inline-block;
+	width: 49.5%;
+	height: 100%;
+}

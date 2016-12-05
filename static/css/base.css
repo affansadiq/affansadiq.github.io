@@ -100,7 +100,7 @@ th, td {
     padding: 5px;
     height: 50px;
     text-align: center;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
 
 /* Page CSS */
@@ -139,7 +139,7 @@ div.relative {
     width: 400px;
     height: 200px;
     border: 2px solid #00BFFF;
-} 
+}
 
 div.absolute {
 	border: 3px dotted #00BFFF;
@@ -165,4 +165,35 @@ div.absolute span {
 	display: inline-block;
 	width: 49.5%;
 	height: 100%;
+}
+
+
+/* edit image */
+#container-editor {
+	margin: 0 auto;
+	width: 60%;
+}
+
+#container-editor h2 {
+	text-align: center;
+}
+
+
+#edit_controls {
+	background-color: #00BBFF;
+	width:	600px;
+	margin: 0 auto;
+}
+
+#edit_controls li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	margin: 10px;
+	color: white;
+}
+
+#image_div img {
+	width: 600px;
 }

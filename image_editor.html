@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Tabelle - Webbasierte Anwendungssysteme</title>
+<title>Image Editor - Webbasierte Anwendungssysteme</title>
 <!-- Meta Tags -->
 <meta name="author" content="Affan Sadiq"/>
 <meta name="keywords" content="Fra-Uas, Student Database, Database, Student"/>
@@ -14,6 +14,7 @@
 <!-- Meta Tags Ende -->
 <!-- CSS Anhang -->
 <link rel="stylesheet" type="text/css" href="./static/css/base.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <!-- CSS Anhang Ende -->
 </head>
 <body>
@@ -42,36 +43,43 @@
 	</div><!-- Page Wrapper -->
 
 	<div class="content-wrapper">
-		<div class="container-one">
-			<!-- Tabelle Anfang -->
-			<table>
-				<tr>
-					<th colspan="4">			Studentenliste
-					</th>
-				</tr>
-				<tr>
-					<th>Name</th>
-					<th>Vorname</th>
-					<th>Matrikelnummer</th>
-					<th>Studiengang</th>
-				</tr>
-				<tr>
-					<td colspan="2">Mustermann Max</td>
-					<td>12345</td>
-					<td>BWL</td>
-				</tr>
-				<tr>
-					<td colspan="2"> Duesentrieb Daniel</td>
-					<td>00001</td>
-					<td>Elektrotechnik</td>
-				</tr>
-				<tr>
-					<td colspan="2">Descartes Rene</td>
-					<td>00000</td>
-					<td>Mathematik</td>
-				</tr>
-			</table><!-- Ende Tabelle -->
-		</div><!-- Container Two  Ende-->
+		<!-- Container One -->
+		<div id="container-editor">
+			<p>
+				<h2>Zusatzaufgabe</h2>
+			</p>
+			<div id="edit_controls">
+				<li>
+					Graustufen<br>
+					<input id="grayscale" class="range" type="range" min="0" max="100" value="0">
+				</li>
+
+				<li>
+					Weichzeichnung<br>
+					<input id="blur" class="range" type="range" min="0" max="10" value="0">
+				</li>
+
+				<li>
+					Belichtung<br>
+					<input id="exposure" class="range" type="range" min="0" max="200" value="100">
+				</li>
+
+				<li>
+					Sepia<br>
+					<input id="sepia" class="range" type="range" min="0" max="100" value="0">
+				</li>
+
+				<li>
+					Transparenz<br>
+					<input id="opacity" class="range" type="range" min="0" max="100" value="100">
+				</li>
+			</div>
+
+			<div id="image_div">
+			 <img src="./static/img/pic1.jpg" id="image_corr">
+			</div>
+		</div><!-- Container One End -->
+
 	</div><!-- Page Wrapper End -->
 </div><!-- Wrapper Ende -->
 
@@ -80,7 +88,9 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.js"></script>
 <script src="./static/js/main.js"></script>
+<script src="./static/js/image_editor.js"></script>
 <!-- JavaScript Ende -->
 </body>
 </html>

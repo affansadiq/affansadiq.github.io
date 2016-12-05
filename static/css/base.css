@@ -174,8 +174,13 @@ div.absolute span {
 	width: 60%;
 }
 
-#container-editor h2 {
+#container-editor .headline {
+	font-size: 20px;
 	text-align: center;
+}
+
+#container-editor p {
+	font-size: 10px;
 }
 
 

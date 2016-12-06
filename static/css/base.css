@@ -199,6 +199,10 @@ div.absolute span {
 	color: white;
 }
 
+#edit_controls li p input {
+	width: 100px;
+}
+
 #image_div img {
 	width: 600px;
 }

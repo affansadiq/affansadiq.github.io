@@ -47,38 +47,44 @@
 			<p class="headline">
 				<span>Zusatzaufgabe</span>
 			</p>
+			<p>
+				Hinweis: Zunächst müssen alle Werte mindestens einmal eingeben werden
+				erst nach diesen wird das Bild editiert.
+			<p>
 			<div id="edit_controls">
+			<form id="controls" action="#">
 				<ul>
 					<li>
-						<p>Graustufen
-						<input id="grayscale" class="range" type="range" min="0" max="100" value="0"/>
+						<p>Graustufen (0 bis 100)
+						<input id="grayscale" class="range" type="text" />
 						</p>
 					</li>
 
 					<li>
-						<p>Weichzeichnung
-						<input id="blur" class="range" type="range" min="0" max="10" value="0"/>
+						<p>Weichzeichnung (0 bis 10)
+						<input id="blur" class="range" type="text" placeholder="0" />
 						</p>
 					</li>
 
 					<li>
-						<p>Belichtung
-						<input id="exposure" class="range" type="range" min="0" max="200" value="100"/>
+						<p>Belichtung (0 bis 200)
+						<input id="exposure" class="range" type="text" placeholder="100" />
 						</p>
 					</li>
 
 					<li>
-						<p>Sepia
-						<input id="sepia" class="range" type="range" min="0" max="100" value="0"/>
+						<p>Sepia (0 bis 100)
+						<input id="sepia" class="range" type="text" placeholder="0" />
 						</p>
 					</li>
 
 					<li>
-						<p>Transparenz
-						<input id="opacity" class="range" type="range" min="0" max="100" value="100"/>
+						<p>Transparenz (0 bis 100)
+						<input id="opacity" class="range" type="text" />
 						</p>
 					</li>
 				</ul>
+			</form>
 			</div>
 
 			<div id="image_div">

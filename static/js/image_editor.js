@@ -1,8 +1,11 @@
 $(document).ready(function () {
-	$(".range").change(change_filter).mousemove(change_filter);
+
+setInterval(change_filter, 500);
+
 });
 
 function change_filter () {
+	console.log('hi');
 	var gray_val = $('#grayscale').val(),
 		blur_val = $('#blur').val(),
 		exposure_val= $('#exposure').val(),
